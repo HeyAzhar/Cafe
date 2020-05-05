@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Solway&family=Srisakdi:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
+
+$font-primary: 'Solway', serif;
+$font-header: 'Srisakdi', cursive;
+
+$color-primary: #130f40;
+$color-secondary: #30336b;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fff;
+  color: $color-primary;
+  font-family: $font-primary !important;
+}
+
+.heading a {
+  color: #fff;
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+#home {
+  background-color: $color-secondary;
+  color: #fff;
+  height: 100vh;
+  font-family: 'Josefin Slab', serif;
+  margin-top: 0;
+  overflow: hidden;
+}
+
+.menu {
+  background: #fff;
+  color: $color-primary;
+  font-family: 'Josefin Slab', serif;
+	margin-top: 0;
+}
+
+.mybtn {
+  background-color: $color-primary;
+  color: #fff;
+  border: 0;
+  outline: none;
+  font-size: 30px;
+  margin: 0;
+  border-radius: 5px;
+  
+  &:focus {
+    outline: none;
+  }
+  &:active {
+    background-color: #d3d3d3;
+    color: $color-primary;
+  }
+}
+
+h1 {
+  font-family: 'Lobster Two', cursive;
+}
+
+h3, h2, h4 {
+  font-family: $font-header !important;
+}
+
+h6 {
+  font-size: large;
+}
+
+.sub-title {
+  margin-bottom: 70px;
+}
+
+.slidecolor, .img-thumbnail, .list-group-item {
+  background-color: $color-secondary;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  position: relative;
+  top: 0;
+  text-align: center;
+}
+
+.slidecolor {
+  border-right: 0.5px solid $color-primary;
+
+  a {
+    border: 0.4px solid $color-primary;
+  }
+}
+
+@media (min-width: 768px) {
+  .slidecolor {
+    top: 0 !important;
+  }
+  .mybtn {
+    display: none;
+  }
+  .fix-nav {
+    width: calc(100% - 241px);
+    margin-left: 241px;
+  }
+}
+
+.slidecolor {
+  position: fixed;
+  width: 241px;
+  height: 100vh;
+  top: 60px;
+  z-index: 99;
+  overflow: hidden;
+}
+
+
+
+.mynav {
+  background-color: $color-primary;
+  color: #fff;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+.active {
+  background-color: #fff !important;
+  color: $color-primary !important;
+}
+
+.item-img {
+  border-radius: 50%;
+  width: 15em;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.557);
+  }
+}
+
+.price {
+  color: rgb(106, 104, 43);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+// Partners Section
+
+.card {
+  width: 13rem;
+  height: 18rem;
+  border: none;
+  box-shadow: 0px 0px 10px 0px rgba(37, 36, 36, 0.544);
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 20px auto;
+  padding: 1rem;
+
+  &:hover {
+    // border: 1px solid $color-primary;
+    transform: translateY(-10px);
+    transition: 0.3s ease;
+    box-shadow: -2px 3px 30px 0px rgba(37, 36, 36, 0.544);
+  }
+}
+
+.partner {
+  background-size: auto;
+  width: inherit;
+  height: 11rem;
+  background-color: #fff;
+}
+
+div .partners {
+  margin-bottom: 100px;
+}
+
+.magicpin {
+  border-radius: 20px;
+}
+
+.swiggy {
+  width: 10rem;
+  margin: auto;
+}
+
+.shoocal {
+  width: 100% !important;
+  height: auto;
+  margin-top: 80px;
+  margin-bottom: 35px;
+}
+
+.p-btn {
+  color: $color-primary;
+  background-color: #fff;
+    border: 1px solid $color-primary;
+    margin-top: 0;
+
+  &:hover {
+    background-color: $color-secondary;
+    color: white;
+    box-shadow: 0px 0px 10px 0px rgba(37, 36, 36, 0.544);
+  }
+}

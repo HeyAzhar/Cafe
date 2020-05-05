@@ -1,0 +1,137 @@
+*,
+*::after,
+*::before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+
+.hidden {
+	position: absolute;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	pointer-events: none;
+}
+
+/* Icons */
+
+.icon {
+	display: block;
+	width: 1.5em;
+	height: 1.5em;
+	margin: 0 auto;
+	fill: #10ff6f;
+}
+
+
+/* Buttons */
+
+.btnn {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	pointer-events: auto;
+	color: #ffffff;
+	border: none;
+	background: none;
+}
+
+.btnn:focus {
+	outline: none;
+}
+
+.btnn:hover {
+	color: #202020;
+}
+
+.btn--arrow {
+	font-size: 1.5em;
+	display: block;
+}
+
+.btn--arrow:nth-child(2) {
+	margin: 0 0 0 0.5em;
+}
+
+.btn--arrow .icon {
+	height: 0.5em;
+}
+
+
+/* Slideshow nav (not part of plugin so we put the styles here) */
+
+.slideshow__nav {
+	position: absolute;
+	pointer-events: none;
+}
+
+.no-js .slideshow__nav {
+	display: none;
+}
+
+.slideshow__nav--arrows {
+	font-size: 4em;
+	right: 1.1em;
+	bottom: 1.45em;
+}
+
+
+
+@media screen and (max-width: 45em) {
+	.slideshow__nav--arrows {
+		font-size: 2em;
+		right: auto;
+		bottom: 1.5em;
+		right: 0.5em;
+	}
+
+}
+
