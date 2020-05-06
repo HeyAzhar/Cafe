@@ -248,3 +248,103 @@ div .partners {
 } 
 
 // Location ends here
+
+// About Section
+
+#about {
+  position: relative;
+  overflow: auto;
+
+  .bg-about {
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .h-about {
+    font-size: 5.5rem;
+    position: absolute;
+    top: 85px;
+    left: 85px;
+    color: #fff;
+  }
+
+  .p-about {
+    font-size: 2rem;
+    position: absolute;
+    top: 230px;
+    bottom: 20px;
+    left: 60px;
+    right: 30px;
+    color: #fff;
+    font-weight: 100;
+    text-shadow: 0 0 5px #000000;
+  }
+  .sign {
+    position: absolute;
+    bottom: 50px;
+    right: 30px;
+    color: #fff;
+    text-shadow: 0 0 5px #000000;
+  }
+  .tag {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    color: #fff;
+    text-shadow: 0 0 5px #000000;
+  }
+}
+
+@media (max-width: 768px) {
+  .h-about {
+    font-size: 1.5rem !important;
+    position: absolute;
+    top: 40px !important;
+    left: 40px !important;
+  }
+
+  .p-about {
+    font-size: 1rem !important;
+    top: 100px !important;
+    left: 30px !important;
+  }
+  .bg-about {
+    width: auto !important;
+    height: 70vh !important;
+  }
+} 
+
+// About Section ends here
+
+// contact section
+
+.number, .social {
+  background: #000428;
+  background: -webkit-linear-gradient(to bottom, #004e92, #000428);
+  background: linear-gradient(to bottom, #004e92, #000428);
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  width: 80%;
+  min-height: 160px;
+  border: 1px solid $color-primary;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 15px #202020e1;
+
+
+  &:hover {
+    transform: translateY(-10px);
+    transition: 0.3s ease;
+    box-shadow: 0 4px 25px #202020;
+  }
+}
+
+.social i {
+  font-size: 1.5rem;
+}
+.social a {
+  color: #fff;
+}
