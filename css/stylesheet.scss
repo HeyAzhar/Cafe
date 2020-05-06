@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Solway&family=Srisakdi:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
+
 
 $font-primary: 'Solway', serif;
 $font-header: 'Srisakdi', cursive;
@@ -29,7 +29,6 @@ body {
   background-color: $color-secondary;
   color: #fff;
   height: 100vh;
-  font-family: 'Josefin Slab', serif;
   margin-top: 0;
   overflow: hidden;
 }
@@ -37,7 +36,6 @@ body {
 .menu {
   background: #fff;
   color: $color-primary;
-  font-family: 'Josefin Slab', serif;
 	margin-top: 0;
 }
 
@@ -151,7 +149,7 @@ h6 {
 
 .card {
   width: 13rem;
-  height: 18rem;
+  height: 17rem;
   border: none;
   box-shadow: 0px 0px 10px 0px rgba(37, 36, 36, 0.544);
   border-radius: 20px;
@@ -206,3 +204,47 @@ div .partners {
     box-shadow: 0px 0px 10px 0px rgba(37, 36, 36, 0.544);
   }
 }
+
+// Partners Section ends here
+
+// Location
+
+#map {
+  border: 2px solid $color-primary;
+  border-radius: 20px;
+  height: 400px;
+  width: 100%;
+  box-shadow: 0 0 10px #2020206d;
+  margin-bottom: 40px;
+}
+
+.location {
+  background: #000428;
+  background: -webkit-linear-gradient(to bottom, #004e92, #000428);
+  background: linear-gradient(to bottom, #004e92, #000428);
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  width: 85%;
+  min-height: 160px;
+  border: 1px solid $color-primary;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 15px #202020e1;
+  padding: 5px 20px;
+
+
+  &:hover {
+    transform: translateY(-10px);
+    transition: 0.3s ease;
+    box-shadow: 0 4px 25px #202020;
+  }
+}
+
+.location h2 {
+  margin-top: 30px;
+  line-height: 2em;
+  text-decoration: underline;
+} 
+
+// Location ends here

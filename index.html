@@ -48,9 +48,9 @@
 					<a href="#home" class="list-group-item list-group-item-action active">Home</a>
 					<a href="#menu" class="list-group-item list-group-item-action">Menu</a>
 					<a href="#partners" class="list-group-item list-group-item-action">Partners</a>
-					<a href="#Location" class="list-group-item list-group-item-action">Location</a>
-					<a href="#About" class="list-group-item list-group-item-action">About</a>
-					<a href="#Contact" class="list-group-item list-group-item-action">Contact</a>
+					<a href="#location" class="list-group-item list-group-item-action">Location</a>
+					<a href="#about" class="list-group-item list-group-item-action">About</a>
+					<a href="#contact" class="list-group-item list-group-item-action">Contact</a>
 				</div>
 			</div>
 			<!-- /#sidebar-wrapper -->
@@ -208,7 +208,7 @@
 				</div>
 				<!-- /Menu Section -->
 
-				<!-- Partners Section TODO: -->
+				<!-- Partners Section -->
 				<div class="container">
 					<div class="row aniview" data-av-animation="fadeInUp" id="partners">
 						<div class="col m-3 p-3 text-center">
@@ -253,7 +253,29 @@
 				</div>
 				<!-- /Partners Section -->
 
-				<!-- <footer>
+				<!-- Location Section -->
+				<div class="container">
+					<div id="location" class="row aniview"  data-av-animation="fadeInUp">
+						<div class="col m-3 p-3 text-center">
+							<h2 class="h1 mt-5">Visit Us</h2>
+							<h6 class="sub-title">The role of a good cook ware in the preparation of a sumptuous meal cannot be over emphasized then one consider white bread</h6>
+						</div>
+					</div>
+						<div class="row align-items-center aniview"  data-av-animation="fadeInUp">
+						<div class="col-md-6">
+							<div id="map"></div>
+						</div>
+						<div class="col-md-6">
+							<div class="m-auto location">
+								<h2><i class="fas text-danger fa-map-marker-alt"></i> Belly Cravings</h2>
+								<p>6th Main Rd, near Indian Oil Petrol Bunk, Vysya Bank Colony, Stage 2, BTM Layout, Bengaluru, Karnataka 560076</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /Location Section -->
+
+				<footer>
 					<div class="conatiner-fluid pt-3 mt-4 text-light bg-dark">
 						<p>
 							<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, assumenda!</span>
@@ -263,7 +285,7 @@
 							<span>Eius quidem aperiam sunt dignissimos enim adipisci molestiae vero porro.</span>
 						</p>
 					</div>
-				</footer> -->
+				</footer>
 
 			</div>
 			<!-- /#page-content-wrapper -->
@@ -281,6 +303,10 @@
 		<script src="js/imagesloaded.pkgd.min.js"></script>
 		<script src="js/anime.min.js"></script>
 		<script src="js/main.js"></script>
+		<!-- map -->
+		<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEtewELmaETcw_XPzzgGYBnScro-NQf7M&callback=initMap">
+    </script>
 		<script>
 			$("#menu-toggle").click(function(e) {
       e.preventDefault();
